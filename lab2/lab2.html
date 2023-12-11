@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <style>
+        /* Стилізація форми */
+        form {
+            background-color: #3498db; /* Колір фону */
+            color: #fff; /* Колір тексту */
+            width: 400px; /* Ширина форми */
+            padding: 20px; /* Внутрішні відступи */
+            border-radius: 15px; /* Закруглені кути */
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2); /* Тінь */
+            position: relative; /* Позиціювання */
+            margin: 0 auto; /* Центрування по горизонталі */
+            text-align: center; /* Вирівнювання тексту у формі по центру */
+        }
+
+        /* Стилізація текстових полів у формі */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%; /* Розширення текстових полів на всю ширину форми */
+            padding: 10px; /* Внутрішні відступи для текстових полів */
+            margin-bottom: 15px; /* Відступ між текстовими полями */
+            border: none; /* Відсутність рамки */
+            border-radius: 5px; /* Закруглені кути для текстових полів */
+        }
+
+        /* Стилізація кнопки відправки у формі */
+        input[type="submit"] {
+            background-color: #2ecc71; /* Колір фону кнопки */
+            color: #fff; /* Колір тексту кнопки */
+            padding: 10px 20px; /* Внутрішні відступи кнопки */
+            border: none; /* Відсутність рамки */
+            border-radius: 5px; /* Закруглені кути кнопки */
+            cursor: pointer; /* Змінює вигляд курсора на пальцевий показник при наведенні на кнопку */
+        }
+    </style>
+</head>
+<body>
+    <h1>Реєстрація</h1>
+
+    <!-- Посилання на сторінку зі списком лабораторних -->
+    <a href="https://hellboar.github.io/KID-42_Slesarenko_Dmytro/">Список лабораторних</a>
+
+    <!-- Форма реєстрації -->
+    <form action="https://webhook.site/a381703e-7be4-48dc-a396-58986ff0e04e" method="POST">
+        <!-- Ім'я користувача -->
+        <label for="first_name">Ім'я:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <!-- Прізвище користувача -->
+        <label for="last_name">Прізвище:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <!-- Адреса електронної пошти -->
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Пароль -->
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Підтвердження паролю -->
+        <label for="confirm_password">Підтвердження паролю:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <!-- Дата народження -->
+        <label for="birthdate">Дата народження:</label>
+        <input type="date" id="birthdate" name="birthdate">
+
+        <!-- Стать -->
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+            <option value="male">Чоловік</option>
+            <option value="female">Жінка</option>
+            <option value="other">Інше</option>
+        </select>
+
+        <!-- Кнопка відправки даних на сервер -->
+        <input type="submit" value="Зареєструватися">
+    </form>
+</body>
+</html>
